@@ -1,0 +1,410 @@
+/* ---------- 1. Base ---------- */
+html {
+  scroll-padding-top: 6rem;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #1b1b1b;
+  background-color: #f4efe4;
+}
+
+/* ---------- 2. Enlace «Saltar al contenido» ---------- */
+.saltar {
+  position: absolute;
+  top: -4rem;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffffff;
+  color: #1f4d2e;
+  border: 3px solid #1f4d2e;
+}
+
+.saltar:focus {
+  top: 1rem;
+}
+
+/* ---------- 3. Cabecera ---------- */
+header {
+  background-color: #b9e0a5;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.6rem;
+  color: #1f4d2e;
+}
+
+header p {
+  margin: 0.4rem 0 0 0;
+}
+
+/* ---------- 4. Menú ---------- */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #1f4d2e;
+  border-bottom: 5px solid #2f7d46;
+  padding: 0.3rem 1rem;
+  text-align: center;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0.2rem;
+}
+
+nav a {
+  display: block;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  background-color: #ffffff;
+  color: #1f4d2e;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  background-color: #b9e0a5;
+}
+
+/* ---------- 5. Contenido principal ---------- */
+main {
+  max-width: 58rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background-color: #ffffff;
+  border: 4px solid #1f4d2e;
+  border-radius: 16px;
+  box-shadow: 8px 8px 0 #1f4d2e;
+  padding: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* ---------- 6. Títulos, texto y listas ---------- */
+h2 {
+  display: inline-block;
+  margin: 0 0 1rem 0;
+  padding: 0.2rem 0.8rem;
+  background-color: #2f7d46;
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+
+h3 {
+  color: #1f4d2e;
+}
+
+strong {
+  background-color: #d7ecc8;
+}
+
+em {
+  color: #8a3b12;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+dt {
+  font-weight: bold;
+  color: #1f4d2e;
+  margin-top: 0.8rem;
+}
+
+dd {
+  margin-left: 1.5rem;
+}
+
+/* ---------- 7. Enlaces y foco ---------- */
+a {
+  color: #2f6b3c;
+}
+
+a:hover {
+  background-color: #d7ecc8;
+}
+
+a:focus-visible {
+  outline: 4px solid #d9822b;
+  outline-offset: 3px;
+}
+
+/* ---------- 8. Imágenes con lema ---------- */
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.fila .imagen {
+  flex: 1 1 18rem;
+  margin: 0 1.5rem 1rem 0;
+}
+
+.fila .texto {
+  flex: 1 1 20rem;
+  margin: 0;
+}
+
+.foto {
+  position: relative;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.foto img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 3px solid #1f4d2e;
+  border-radius: 16px;
+}
+
+.foto figcaption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0.4rem 0.8rem;
+  background-color: rgba(31, 77, 46, 0.88);
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0 0 16px 16px;
+}
+
+.credito {
+  margin: 0.4rem 0 0 0;
+  font-size: 0.8rem;
+  color: #444444;
+  text-align: center;
+}
+
+/* ---------- 9. Galería ---------- */
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galeria .imagen {
+  flex: 1 1 12rem;
+  margin: 0 0.5rem 1rem 0.5rem;
+}
+
+.galeria img {
+  height: 11rem;
+  object-fit: cover;
+}
+
+/* ---------- 10. Tarjetas ---------- */
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  position: relative;
+  flex: 1 1 14rem;
+  margin: 1.2rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f4efe4;
+  border: 3px solid #1f4d2e;
+  border-radius: 12px;
+}
+
+article h3 {
+  margin-bottom: 0.3rem;
+}
+
+article p {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.etiqueta {
+  position: absolute;
+  top: -0.9rem;
+  right: 1rem;
+  padding: 0.1rem 0.8rem;
+  background-color: #a23b00;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border: 3px solid #1b1b1b;
+  border-radius: 999px;
+}
+
+aside {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #fff6d6;
+  border-left: 6px solid #d9822b;
+}
+
+aside h3 {
+  margin: 0.3rem 0;
+}
+
+/* ---------- 11. Tabla ---------- */
+.tabla-con-scroll {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  caption-side: top;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+th,
+td {
+  border: 2px solid #1f4d2e;
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+thead th {
+  background-color: #b9e0a5;
+}
+
+tbody th {
+  background-color: #f4efe4;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #faf7ef;
+}
+
+tr.destacada td {
+  background-color: #d7ecc8;
+  font-weight: bold;
+}
+
+/* ---------- 12. Formulario ---------- */
+fieldset {
+  border: 3px solid #1f4d2e;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin: 0 0 1.5rem;
+}
+
+legend {
+  padding: 0 0.5rem;
+  font-weight: bold;
+  color: #1f4d2e;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 26rem;
+  margin-bottom: 0.8rem;
+  padding: 0.5rem 0.7rem;
+  border: 3px solid #1f4d2e;
+  border-radius: 8px;
+  font: inherit;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+  outline: 4px solid #d9822b;
+  outline-offset: 2px;
+}
+
+input:not(:placeholder-shown):invalid {
+  border-color: #a23b00;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #2f7d46;
+  margin-left: 0.5rem;
+}
+
+.boton {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  margin-right: 0.5rem;
+  background-color: #2f7d46;
+  color: #ffffff;
+  font: inherit;
+  font-size: 1rem;
+  border: 3px solid #1f4d2e;
+  border-radius: 999px;
+  box-shadow: 3px 3px 0 #1f4d2e;
+  cursor: pointer;
+}
+
+/* ---------- 13. Pie y botón «Volver arriba» ---------- */
+footer {
+  background-color: #1f4d2e;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.arriba {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #b9e0a5;
+  color: #1b1b1b;
+  border: 3px solid #1b1b1b;
+  border-radius: 999px;
+  box-shadow: 3px 3px 0 #1b1b1b;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* ---------- 14. Pantallas estrechas ---------- */
+@media (max-width: 45rem) {
+  nav {
+    position: static;
+  }
+
+  html {
+    scroll-padding-top: 0;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .fila .imagen {
+    margin-right: 0;
+  }
+}
